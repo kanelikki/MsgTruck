@@ -19,7 +19,7 @@ namespace MsgTruck
                 ChannelPermission.SendMessagesInThreads
             ];
 
-        internal bool HasPermission(IGuildUser currentUser, IGuildChannel? channel,
+        internal bool HasPermission(IGuildUser currentUser, IGuildChannel channel,
             out IEnumerable<ChannelPermission> missedPermissions)
             => HasPermission(currentUser, channel, out missedPermissions,
                 ChannelManager.IsThread(channel) ?  _allowedThreadPermissions : _allowedPermissions);

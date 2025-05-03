@@ -33,13 +33,13 @@ namespace MsgTruck
                 return ChannelValidationResult.FromUserFailure(_invalidChannelErrorMessage);
             }
             IMessageChannel? channel = _parser.ParseChannel(context.Guild, modalData.Channel);
-            if (channel == null)
+            if (channel == null || !(channel is IGuildChannel guildChannel))
             {
                 return ChannelValidationResult.FromSystemFailure
                     ($"Invalid Channel ID or name {modalData.Channel}.", null);
             }
             if (!_permissionChecker
-                .HasPermission(context.Guild.CurrentUser, channel as IGuildChannel, out var rejected))
+                .HasPermission(context.Guild.CurrentUser, guildChannel, out var rejected))
             {
                 if (!rejected.Any())
                 {

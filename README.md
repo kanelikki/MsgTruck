@@ -4,6 +4,8 @@ MsgTruck is a text channel message moving Discord bot.
 
 *Truck of your favourite seasoning MSG, or A bot that moves messages to anywhere else, to other channel, to other thread, to your backyard, or to andromeda.*
 
+![MsgTruck official header image, a truck is running on a rainbow road on the sky](https://raw.githubusercontent.com/kanelikki/MsgTruck/refs/heads/msgtruck/imgs/header.png)
+
 ## Why?
 
 - Off-topic is often deleted or left as is, scrolling up the other chat.
@@ -60,8 +62,14 @@ This is made with Discord.NET.
 
 If you don't like it, it's always free to change code for another language/platform.
 
+## Images and Headers
+
+![MsgTruck official header icon, a round purple mail is on a round truck, in vector style](https://raw.githubusercontent.com/kanelikki/MsgTruck/refs/heads/msgtruck/imgs/msgtruck-profile.png)
+
+Official profile and header images are in the `imgs` folder.
+
+But since this is only source code, you choose your bot profile picture and header from developer portal. Enjoy!
+
 ## Side note
 
 Sorry I didn't make such program for many years and my code is messy again but I'm not gonna refactor aAaaAaAAA
-
-Since this is only source code, you choose your bot profile picture and header from developer portal. Enjoy!
